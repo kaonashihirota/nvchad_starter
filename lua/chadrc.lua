@@ -5,13 +5,25 @@
 ---@type ChadrcConfig
 local M = {}
 
+local statusline_bg = '#333945'
+
 M.base46 = {
-	theme = "onedark",
+	theme = "nord",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
+  hl_override = {
+    St_cwd_icon = {
+      fg = "#7797b7",
+      bg = "#3f4551",
+    },
+    St_cwd_sep = { fg = "#3f4551", bg = "#3f4551" },
+    St_pos_sep = { fg = "#3f4551", bg = "#3f4551" },
+    St_pos_icon = { fg = "#646a76", bg = "#3f4551" },
+    nord_blue = { fg = "#646a76", bg = "#3f4551" },
+  }
 }
 
 return M
