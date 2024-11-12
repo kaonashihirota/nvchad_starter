@@ -22,7 +22,16 @@ M.base46 = {
     St_cwd_sep = { fg = "#3f4551", bg = "#3f4551" },
     St_pos_sep = { fg = "#3f4551", bg = "#3f4551" },
     St_pos_icon = { fg = "#646a76", bg = "#3f4551" },
-    nord_blue = { fg = "#646a76", bg = "#3f4551" },
+    St_NormalMode = { bg = "#4b515d" },
+    St_NormalModeSep = { fg = "#4b515d", bg = "#4b515d"},
+    St_VisualMode = {
+      bg = "#4b515d"
+    },
+    St_VisualModeSep = { fg = "#4b515d", bg = "#4b515d"},
+    St_InsertMode = { bg = "#4b515d" },
+    St_InsertModeSep = { fg = "#4b515d", bg = "#4b515d"},
+    St_CommandMode = { bg = "#4b515d" },
+    St_CommandModeSep = { fg = "#4b515d", bg = "#4b515d"},
   }
 }
 
