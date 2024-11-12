@@ -16,7 +16,7 @@ M.base46 = {
 	-- },
   hl_override = {
     St_cwd_icon = {
-      fg = "#7797b7",
+      fg = "#646a76",
       bg = "#3f4551",
     },
     St_cwd_sep = { fg = "#3f4551", bg = "#3f4551" },
@@ -32,6 +32,12 @@ M.base46 = {
     St_InsertModeSep = { fg = "#4b515d", bg = "#4b515d"},
     St_CommandMode = { bg = "#4b515d" },
     St_CommandModeSep = { fg = "#4b515d", bg = "#4b515d"},
+    NvimTreeGitDirty = {
+    fg = "#a983a2"
+    },
+    NvimTreeGitNew = {
+      fg = "#88C0D0",
+    },
   }
 }
 
