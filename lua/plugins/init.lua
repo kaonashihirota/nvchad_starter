@@ -12,14 +12,35 @@ return {
       require "configs.lspconfig"
     end,
   },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "tpope/vim-fugitive",
+    cmd = { "Git", "Gw", "Gr", "Gsplit", "Gedit" },
+    -- lazy = false,
+  },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+      ensure_installed = {
+        "vim", "lua", "vimdoc",
+        "html", "css","javascript",
+        "typescript",
+        "tsx",
+        "c",
+        "markdown",
+        "markdown_inline",
+        -- "norg",
+        -- "norg_meta",
+        "java",
+        'python',
+        'go',
+        'jq',
+        'gdscript',
+        'cpp',
+        'http',
+        'json',
+        'terraform',
+        'hcl',
+      },
+  	},
+  },
 }
