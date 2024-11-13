@@ -20,6 +20,7 @@ M.base46 = {
     St_cwd_sep = { fg = "#3f4551", bg = "#3f4551" },
     St_pos_sep = { fg = "#3f4551", bg = "#3f4551" },
     St_pos_icon = { fg = "#646a76", bg = "#3f4551" },
+    St_pos_text = { fg = "#6484a4", bg = "#3f4551" },
     St_NormalMode = { bg = "#646a76" },
     St_NormalModeSep = { fg = "#646a76", bg = "#646a76"},
     St_VisualMode = {
@@ -31,7 +32,7 @@ M.base46 = {
     St_CommandMode = { bg = "#646a76" },
     St_CommandModeSep = { fg = "#646a76", bg = "#646a76"},
     St_EmptySpace = { fg = "#646a76" },
-
+    St_Lsp = { fg = "#6484a4" },
 
     NvimTreeGitDirty = {
       fg = "#a983a2"
