@@ -41,6 +41,10 @@ M.base46 = {
       bg = "#434C5E",
       fg = "#88C0D0",
     },
+    LspSignatureActiveParameter = {
+      bg = "#434C5E",
+      fg = "#88C0D0",
+    },
     NvimTreeGitDirty = {
       fg = "#a983a2",
     },
