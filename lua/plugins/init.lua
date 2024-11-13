@@ -18,11 +18,15 @@ return {
     -- lazy = false,
   },
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
       ensure_installed = {
-        "vim", "lua", "vimdoc",
-        "html", "css","javascript",
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "javascript",
         "typescript",
         "tsx",
         "c",
@@ -31,17 +35,17 @@ return {
         "norg",
         -- "norg_meta",
         "java",
-        'python',
-        'go',
-        'jq',
-        'gdscript',
-        'cpp',
-        'http',
-        'json',
-        'terraform',
-        'hcl',
+        "python",
+        "go",
+        "jq",
+        "gdscript",
+        "cpp",
+        "http",
+        "json",
+        "terraform",
+        "hcl",
       },
-  	},
+    },
   },
   {
     "vhyrro/luarocks.nvim",
@@ -51,10 +55,10 @@ return {
   {
     "nvim-neorg/neorg",
     dependencies = { "luarocks.nvim" },
-    lazy = false,  -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
+    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
     version = "*", -- Pin Neorg to the latest stable release
     config = function()
-      require("neorg").setup({
+      require("neorg").setup {
         load = {
           ["core.defaults"] = {}, -- Loads default behaviour
           ["core.concealer"] = {
@@ -105,10 +109,19 @@ return {
           -- ['core.integrations.truezen'] = {},
           -- ["core.integrations.treesitter"] = {
           -- },
-        }
-      })
+        },
+      }
       vim.wo.foldlevel = 99
       vim.wo.conceallevel = 2
     end,
-  }
+  },
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    cmd = { "ZenMode" },
+  },
 }

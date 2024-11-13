@@ -32,5 +32,6 @@
   "ui": { "branch": "v3.0", "commit": "c59c5fc078cc22a28604e154552c41705359145b" },
   "vim-fugitive": { "branch": "master", "commit": "d4877e54cef67f5af4f950935b1ade19ed6b7370" },
   "volt": { "branch": "main", "commit": "1df6698f7e5d19db578063412d12322e53376f5e" },
-  "which-key.nvim": { "branch": "main", "commit": "68e37e12913a66b60073906f5d3f14dee0de19f2" }
+  "which-key.nvim": { "branch": "main", "commit": "68e37e12913a66b60073906f5d3f14dee0de19f2" },
+  "zen-mode.nvim": { "branch": "main", "commit": "29b292bdc58b76a6c8f294c961a8bf92c5a6ebd6" }
 }
