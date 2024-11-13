@@ -37,7 +37,10 @@ M.base46 = {
     St_TerminalModeSep = { fg = "#646a76", bg = "#646a76" },
     St_EmptySpace = { fg = "#646a76" },
     St_Lsp = { fg = "#6484a4" },
-
+    PmenuSel = {
+      bg = "#434C5E",
+      fg = "#88C0D0",
+    },
     NvimTreeGitDirty = {
       fg = "#a983a2",
     },
