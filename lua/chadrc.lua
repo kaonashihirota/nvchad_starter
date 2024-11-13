@@ -67,12 +67,21 @@ M.base46 = {
     TelescopePromptPrefix = {
       fg = "#6484a4",
     },
+    TbBufOnClose = {
+      fg = "#646a76",
+    },
+    TbBufOffClose = {
+      fg = "#3f4551",
+    },
+    TbCloseAllBufsBtn = {
+      bg = "#646a76",
+    },
   },
 }
 
 M.ui = {
   tabufline = {
-    enabled = false,
+    lazyload = false,
   },
 }
 
