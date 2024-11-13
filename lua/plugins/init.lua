@@ -55,7 +55,8 @@ return {
   {
     "nvim-neorg/neorg",
     dependencies = { "luarocks.nvim" },
-    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
+    ft = { "norg" },
+    cmd = { "Neorg" },
     version = "*", -- Pin Neorg to the latest stable release
     config = function()
       require("neorg").setup {
@@ -123,5 +124,74 @@ return {
       -- refer to the configuration section below
     },
     cmd = { "ZenMode" },
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    ft = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+    config = function()
+      require("nvim-ts-autotag").setup {
+        opts = {
+          -- Defaults
+          enable_close = true, -- Auto close tags
+          enable_rename = true, -- Auto rename pairs of tags
+          enable_close_on_slash = false, -- Auto close on trailing </
+        },
+        -- Also override individual filetype configs, these take priority.
+        -- Empty by default, useful if one of the "opts" global settings
+        -- doesn't work well in a specific filetype
+        per_filetype = {
+          ["html"] = {
+            enable_close = false,
+          },
+        },
+      }
+    end,
+  },
+  {
+    "stevearc/oil.nvim",
+    opts = {},
+    -- lazy = false,
+    cmd = { "Oil" },
+  },
+  {
+    "nvim-telescope/telescope-live-grep-args.nvim",
+  },
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+  },
+  {
+    "benfowler/telescope-luasnip.nvim",
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        prompt_prefix = " σ  ",
+        -- buffer_previewer_maker = filter_long_line_files,
+        mappings = {
+          n = {
+            ["q"] = require("telescope.actions").close,
+            -- ["gt"] = require("telescope-live-grep-args.shortcuts").grep_word_under_cursor(),
+          },
+        },
+      },
+      extensions_list = { "themes", "terms", "live_grep_args", "file_browser", "luasnip" },
+      extensions = {
+        file_browser = {
+          dir_icon = "",
+          -- dir_icon_hl = 'gui=bold term=bold cterm=bold',
+        },
+      },
+    },
+    keys = {
+      {
+        "gt",
+        function()
+          require("telescope-live-grep-args.shortcuts").grep_word_under_cursor()
+        end,
+        desc = "Find for word under cursor",
+      },
+    },
   },
 }
