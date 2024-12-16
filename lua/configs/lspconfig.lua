@@ -20,7 +20,8 @@ local servers = {
   "jsonls",
   "ruff",
   "terraformls",
-  "gradle_ls"
+  "gradle_ls",
+  "intelephense",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
