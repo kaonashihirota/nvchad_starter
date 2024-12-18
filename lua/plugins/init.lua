@@ -50,6 +50,7 @@ return {
         "gitcommit",
         "gitignore",
         "php",
+        "gomod",
       },
       indent = {
         enable = true,
@@ -118,16 +119,18 @@ return {
           --   }
           -- },
           ["core.ui.calendar"] = {},
+          ["core.integrations.telescope"] = {},
           -- ["core.tempus"] = {},
           -- ['core.integrations.zen_mode'] = {},
           -- ['core.integrations.truezen'] = {},
-          -- ["core.integrations.treesitter"] = {
-          -- },
+          ["core.integrations.treesitter"] = {
+          },
         },
       }
       vim.wo.foldlevel = 99
       vim.wo.conceallevel = 2
     end,
+    dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
   },
   {
     "folke/zen-mode.nvim",
@@ -189,7 +192,7 @@ return {
           },
         },
       },
-      extensions_list = { "themes", "terms", "live_grep_args", "file_browser", "luasnip" },
+      extensions_list = { "themes", "terms", "live_grep_args", "file_browser", "luasnip", "neorg" },
       extensions = {
         file_browser = {
           dir_icon = "",
