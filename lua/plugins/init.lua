@@ -123,8 +123,9 @@ return {
           -- ["core.tempus"] = {},
           -- ['core.integrations.zen_mode'] = {},
           -- ['core.integrations.truezen'] = {},
-          ["core.integrations.treesitter"] = {
-          },
+          ["core.integrations.treesitter"] = { },
+          ["core.summary"]  = {},
+
         },
       }
       vim.wo.foldlevel = 99
