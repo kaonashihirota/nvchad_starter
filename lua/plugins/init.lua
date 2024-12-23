@@ -51,6 +51,7 @@ return {
         "gitignore",
         "php",
         "gomod",
+        "bash"
       },
       indent = {
         enable = true,
