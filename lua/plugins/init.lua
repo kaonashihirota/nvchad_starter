@@ -33,7 +33,7 @@ return {
         "markdown",
         "markdown_inline",
         "norg",
-        -- "norg_meta",
+        "norg_meta",
         "java",
         "python",
         "go",
