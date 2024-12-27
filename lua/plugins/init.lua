@@ -51,7 +51,14 @@ return {
         "gitignore",
         "php",
         "gomod",
-        "bash"
+        "bash",
+        "scheme",
+        "yaml",
+        "dockerfile",
+        "fish",
+        "tmux",
+        "c_sharp",
+        "csv",
       },
       indent = {
         enable = true,
@@ -96,11 +103,10 @@ return {
           ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
-                idlestic = "~/neorg_notes/idlestic/",
-                drafts = "~/neorg_notes/drafts",
+                legacy = "~/neorg_notes/legacy",
                 lab = "~/neorg_notes/lab",
-                idlex = "~/neorg_notes/idlex.cc",
-                plan = "~/plan",
+                stack = "~/neorg_notes/stack",
+                -- dev = "~/dev",
               },
             },
           },
@@ -124,9 +130,8 @@ return {
           -- ["core.tempus"] = {},
           -- ['core.integrations.zen_mode'] = {},
           -- ['core.integrations.truezen'] = {},
-          ["core.integrations.treesitter"] = { },
-          ["core.summary"]  = {},
-
+          ["core.integrations.treesitter"] = {},
+          ["core.summary"] = {},
         },
       }
       vim.wo.foldlevel = 99
