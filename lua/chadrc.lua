@@ -41,6 +41,9 @@ M.base46 = {
       bg = "#434C5E",
       fg = "#88C0D0",
     },
+    St_LspMsg = {
+      fg = '#8FBCBB',
+    },
     LspSignatureActiveParameter = {
       bg = "#434C5E",
       fg = "#88C0D0",

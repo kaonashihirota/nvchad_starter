@@ -42,5 +42,5 @@ vim.opt.listchars:append("space:⋅")
 vim.opt.listchars:append("eol:↴")
 
 
-vim.cmd[[highlight NotifyINFOTitle ctermbg=0 guifg=#A3BE8C]]
-vim.cmd[[highlight NotifyINFOIcon ctermbg=0 guifg=#A3BE8C]]
+vim.cmd[[highlight NotifyINFOTitle ctermbg=0 guifg=#8FBCBB]]
+vim.cmd[[highlight NotifyINFOIcon ctermbg=0 guifg=#8FBCBB]]
