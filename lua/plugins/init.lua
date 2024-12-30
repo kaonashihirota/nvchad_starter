@@ -106,6 +106,7 @@ return {
                 legacy = "~/neorg_notes/legacy",
                 lab = "~/neorg_notes/lab",
                 stack = "~/neorg_notes/stack",
+                chore = "~/neorg_notes/chore",
                 -- dev = "~/dev",
               },
             },
