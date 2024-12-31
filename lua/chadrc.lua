@@ -35,6 +35,16 @@ M.base46 = {
       bg = "#646a76",
     },
     St_TerminalModeSep = { fg = "#646a76", bg = "#646a76" },
+
+    St_SelectMode = { bg = "#646a76" },
+    St_SelectModeSep = { fg = "#646a76", bg = "#646a76" },
+
+    St_NTerminalMode = { bg = "#646a76" },
+    St_NTerminalModeSep = { fg = "#646a76", bg = "#646a76" },
+
+    St_ReplaceMode = { bg = "#646a76" },
+    St_ReplaceModeSep = { fg = "#646a76", bg = "#646a76" },
+
     St_EmptySpace = { fg = "#646a76" },
     St_Lsp = { fg = "#6484a4" },
     PmenuSel = {
@@ -42,7 +52,7 @@ M.base46 = {
       fg = "#88C0D0",
     },
     St_LspMsg = {
-      fg = '#8FBCBB',
+      fg = "#8FBCBB",
     },
     LspSignatureActiveParameter = {
       bg = "#434C5E",
