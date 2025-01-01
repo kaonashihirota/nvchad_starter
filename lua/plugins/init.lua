@@ -139,7 +139,7 @@ return {
       vim.wo.foldlevel = 99
       vim.wo.conceallevel = 2
     end,
-    -- dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
+    dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
   },
   {
     "folke/zen-mode.nvim",
