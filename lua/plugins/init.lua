@@ -60,6 +60,7 @@ return {
         "c_sharp",
         "csv",
         "latex",
+        "rust"
       },
       indent = {
         enable = true,
@@ -339,17 +340,4 @@ return {
       },
     },
   },
-  config = function()
-    require("avante").setup {
-      provider = "openai",
-      auto_suggestions_provider = "openai",
-      dual_boost = {
-        enabled = true,
-        first_provider = "openai",
-        second_provider = "claude",
-        prompt = "Based on the two reference outputs below, generate a response that incorporates elements from both but reflects your own judgment and unique perspective. Do not provide any explanation, just give the response directly. Reference Output 1: [{{provider1_output}}], Reference Output 2: [{{provider2_output}}]",
-        timeout = 60000, -- Timeout in milliseconds
-      },
-    }
-  end,
 }
