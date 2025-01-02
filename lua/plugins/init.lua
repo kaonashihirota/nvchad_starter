@@ -77,7 +77,7 @@ return {
   },
   {
     "nvim-neorg/neorg",
-    dependencies = { "luarocks.nvim" },
+    -- dependencies = { "luarocks.nvim" },
     ft = { "norg" },
     cmd = { "Neorg" },
     version = "*", -- Pin Neorg to the latest stable release
@@ -139,7 +139,7 @@ return {
       vim.wo.foldlevel = 99
       vim.wo.conceallevel = 2
     end,
-    dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
+    dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" }, "luarocks.nvim" },
   },
   {
     "folke/zen-mode.nvim",
@@ -298,6 +298,7 @@ return {
     lazy = false,
     version = false, -- set this if you want to always pull the latest change
     opts = {
+      provider = "gemini",
       -- add any opts here
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
