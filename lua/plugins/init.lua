@@ -136,6 +136,7 @@ return {
           -- ['core.integrations.truezen'] = {},
           ["core.integrations.treesitter"] = {},
           ["core.summary"] = {},
+          ['core.latex.renderer'] = {},
         },
       }
       vim.wo.foldlevel = 99
