@@ -48,3 +48,9 @@ vim.cmd[[highlight NoiceVirtualText ctermbg=0 guifg=#464c58]]
 vim.cmd[[highlight NoiceCmdlinePopup ctermbg=0 guibg=#2a303c]]
 vim.cmd[[highlight NoiceCmdlinePopupBorderSearch ctermbg=0 guifg=#464c58]]
 vim.cmd[[highlight NoiceCmdlinePopupBorder ctermbg=0 guifg=#464c58]]
+
+vim.api.nvim_set_hl(0, 'RenderMarkdownH2Bg', { link = "RenderMarkdownH1Bg" })
+vim.api.nvim_set_hl(0, 'RenderMarkdownH3Bg', { link = "RenderMarkdownH1Bg" })
+vim.api.nvim_set_hl(0, 'RenderMarkdownH4Bg', { link = "RenderMarkdownH1Bg" })
+vim.api.nvim_set_hl(0, 'RenderMarkdownH5Bg', { link = "RenderMarkdownH1Bg" })
+vim.api.nvim_set_hl(0, 'RenderMarkdownH6Bg', { link = "RenderMarkdownH1Bg" })
