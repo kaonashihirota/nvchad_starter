@@ -57,3 +57,9 @@ vim.api.nvim_set_hl(0, 'RenderMarkdownH6Bg', { link = "RenderMarkdownH1Bg" })
 vim.api.nvim_set_hl(0, 'RenderMarkdownBullet', { link = "RenderMarkdownH1Bg" })
 vim.api.nvim_set_hl(0, 'RenderMarkdownQuote', { link = "RenderMarkdownH1Bg" })
 vim.api.nvim_set_hl(0, 'AvanteThirdTitle', { link = "RenderMarkdownH1Bg" })
+
+vim.cmd[[highlight AvanteTitle ctermbg=0 guibg=#81A1C1]]
+vim.cmd[[highlight AvanteReversedTitle ctermbg=0 guifg=#81A1C1]]
+
+vim.api.nvim_set_hl(0, 'AvanteInlineHint', { link = "Comment" })
+vim.api.nvim_set_hl(0, 'AvantePopupHint', { link = "Comment" })
