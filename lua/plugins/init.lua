@@ -62,6 +62,7 @@ return {
         "latex",
         "rust",
         "mermaid",
+        "nginx",
       },
       indent = {
         enable = true,
@@ -136,7 +137,7 @@ return {
           -- ['core.integrations.truezen'] = {},
           ["core.integrations.treesitter"] = {},
           ["core.summary"] = {},
-          ['core.latex.renderer'] = {},
+          ["core.latex.renderer"] = {},
         },
       }
       vim.wo.foldlevel = 99
@@ -586,4 +587,24 @@ return {
       }
     end,
   },
+  {
+    "f3fora/cmp-spell",
+    config = function()
+      require("cmp").setup {
+        sources = {
+          {
+            name = "spell",
+            option = {
+              keep_all_entries = false,
+              enable_in_context = function()
+                return true
+              end,
+              preselect_correct_word = true,
+            },
+          },
+        },
+      }
+    end,
+  },
+  lazy = false,
 }
