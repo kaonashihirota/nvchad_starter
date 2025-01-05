@@ -22,6 +22,7 @@ local servers = {
   "terraformls",
   "gradle_ls",
   "intelephense",
+  "rust_analyzer"
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
