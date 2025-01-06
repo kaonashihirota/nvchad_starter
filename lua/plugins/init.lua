@@ -593,23 +593,14 @@ return {
     end,
   },
   {
-    "f3fora/cmp-spell",
-    config = function()
-      require("cmp").setup {
-        sources = {
-          {
-            name = "spell",
-            option = {
-              keep_all_entries = false,
-              enable_in_context = function()
-                return true
-              end,
-              preselect_correct_word = true,
-            },
-          },
-        },
-      }
-    end,
+    "rest-nvim/rest.nvim",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      opts = function(_, opts)
+        opts.ensure_installed = opts.ensure_installed or {}
+        table.insert(opts.ensure_installed, "http")
+      end,
+    },
+    ft = { "http", "HTTP" },
   },
-  lazy = false,
 }
