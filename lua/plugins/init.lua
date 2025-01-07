@@ -64,6 +64,7 @@ return {
         "mermaid",
         "nginx",
         "sql",
+        "ssh_config",
       },
       indent = {
         enable = true,
