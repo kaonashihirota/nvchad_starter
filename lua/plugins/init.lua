@@ -63,6 +63,7 @@ return {
         "rust",
         "mermaid",
         "nginx",
+        "sql",
       },
       indent = {
         enable = true,
