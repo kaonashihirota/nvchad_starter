@@ -65,6 +65,7 @@ return {
         "nginx",
         "sql",
         "ssh_config",
+        "toml",
       },
       indent = {
         enable = true,
