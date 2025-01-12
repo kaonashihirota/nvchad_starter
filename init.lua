@@ -63,3 +63,5 @@ vim.cmd[[highlight AvanteReversedTitle ctermbg=0 guifg=#81A1C1]]
 
 vim.api.nvim_set_hl(0, 'AvanteInlineHint', { link = "Comment" })
 vim.api.nvim_set_hl(0, 'AvantePopupHint', { link = "Comment" })
+
+vim.opt.laststatus = 3

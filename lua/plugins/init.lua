@@ -114,7 +114,7 @@ return {
                 lab = "~/neorg_notes/lab",
                 stack = "~/neorg_notes/stack",
                 chore = "~/neorg_notes/chore",
-                triki9e = "~/neorg_notes/triki9e",
+                triki9e = "~/neorg_notes/triki9e.dev",
                 -- dev = "~/dev",
               },
             },
