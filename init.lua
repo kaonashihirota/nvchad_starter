@@ -65,3 +65,11 @@ vim.api.nvim_set_hl(0, 'AvanteInlineHint', { link = "Comment" })
 vim.api.nvim_set_hl(0, 'AvantePopupHint', { link = "Comment" })
 
 vim.opt.laststatus = 3
+
+function copy_filename()
+  local filename = vim.fn.expand("%:t")
+  vim.fn.setreg("+", filename)
+  print('file path: ' .. filename .. ' copied to clipboard')
+end
+
+vim.api.nvim_set_keymap("n", "<leader>cf", ":lua copy_filename_cwd()<CR>", { noremap = true, silent = true })
