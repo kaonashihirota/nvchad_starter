@@ -303,7 +303,7 @@ return {
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
-    lazy = false,
+    -- lazy = false,
     version = false, -- set this if you want to always pull the latest change
     opts = {
       provider = "gemini",
@@ -554,7 +554,7 @@ return {
     dependencies = {
       "3rd/image.nvim",
     },
-    lazy = false,
+    event = 'VeryLazy',
     opts = { -- you can just pass {}, defaults below
       renderer_options = {
         mermaid = {
