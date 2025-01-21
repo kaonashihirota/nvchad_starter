@@ -20,6 +20,6 @@ map("n", "<leader>=", "<cmd>wincmd =<CR>", { desc = "=" })
 
 map("n", "<Esc><Esc>", ":w<cr>", { desc = "save" })
 map("n", "<leader>ww", ":w<cr>", { desc = "save" })
-map("n", "<leader>gc", ":Gw | Git commit % -m 'chore(sync): sync'", { desc = "commit" })
+map("n", "<leader>gc", ":Git commit % -m 'chore(sync): sync'", { desc = "commit" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
