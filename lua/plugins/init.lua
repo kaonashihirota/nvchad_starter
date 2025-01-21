@@ -66,6 +66,7 @@ return {
         "sql",
         "ssh_config",
         "toml",
+        "ini",
       },
       indent = {
         enable = true,
