@@ -307,7 +307,15 @@ return {
     -- lazy = false,
     version = false, -- set this if you want to always pull the latest change
     opts = {
-      provider = "gemini",
+      provider = "deepseek",
+      vendors = {
+        deepseek = {
+          __inherited_from = "openai",
+          api_key_name = "DEEPSEEK_API_KEY",
+          endpoint = "https://api.deepseek.com",
+          model = "deepseek-coder",
+        },
+      },
       windows = {
         input = {
           prefix = "❯ ",
@@ -555,7 +563,7 @@ return {
     dependencies = {
       "3rd/image.nvim",
     },
-    event = 'VeryLazy',
+    event = "VeryLazy",
     opts = { -- you can just pass {}, defaults below
       renderer_options = {
         mermaid = {
