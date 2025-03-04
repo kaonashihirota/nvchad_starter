@@ -100,6 +100,9 @@ M.ui = {
   tabufline = {
     lazyload = false,
   },
+  statusline = {
+    separator_style = "round"
+  },
 }
 
 return M
